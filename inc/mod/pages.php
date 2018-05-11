@@ -963,7 +963,7 @@ function mod_page_ip_less($b, $id) {
 	}
 	
 	if (hasPermission($config['mod']['modlog_ip'])) {
-		$query = prepare("SELECT `username`, `mod`, `ip`, `board`, `time`, `text` FROM ``modlogs`` LEFT JOIN ``mods`` ON `mod` = ``mods``.`id` WHERE `text` LIKE :search and board = :board ORDER BY `time` DESC LIMIT 50");
+		$query = prepare("SELECT `username`, `mod`, `ip`, `board`, `time`, `text` FROM ``modlogs`` LEFT JOIN ``mods`` ON `mod` = ``mods``.`id` WHERE MATCH ( text ) AGAINST ( :search ) and board = :board ORDER BY `time` DESC LIMIT 50");
 		$query->bindValue(':search', '%' . $ip . '%');
 		$query->execute() or error(db_error($query));
 		$args['logs'] = $query->fetchAll(PDO::FETCH_ASSOC);
