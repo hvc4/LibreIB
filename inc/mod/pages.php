@@ -129,6 +129,7 @@ function mod_dashboard() {
 	
 	modLog('Looked at dashboard', false);
 	
+	$args['displayboards'] = array();
     	if($mod['boards'][0]!="*"){
       		foreach($args['boards'] as $boarddisplay){
           		if(in_array($boarddisplay['uri'], $mod['boards'],true)){
