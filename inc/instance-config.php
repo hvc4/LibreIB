@@ -254,6 +254,10 @@ $config['site_name'] = "&infin;chan";
 // 8chan specific mod pages
 require '8chan-mod-config.php';
 
+//tor posting on by default (^:
+$config['tor_posting'] = true; 
+$config['tor_image_posting'] = true;
+
 // Load instance functions later on
 require_once 'instance-functions.php';
 	
