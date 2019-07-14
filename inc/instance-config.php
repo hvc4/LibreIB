@@ -162,7 +162,6 @@
 	//Inline audio and more stuff I stole from LibreChan
 	$config['additional_javascript'][] = 'js/copy_clipboard.js'; 	
 	$config['additional_javascript'][] = 'js/smooth_scroll.js'; 	
-	$config['additional_javascript'][] = 'js/audio-player.js'; 
 
 	//$config['font_awesome_css'] = '/netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css';
 	
