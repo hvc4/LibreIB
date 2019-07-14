@@ -1388,6 +1388,10 @@
 	// Replace ?/config with a simple text editor for editing inc/instance-config.php.
 	$config['mod']['config_editor_php'] = false;
 
+	// After how long do bans expire
+	$config['bans_expire_global'] = 60 * 60 * 24 * 30; // 30 days 	
+	$config['bans_expire_local'] = 60 * 60 * 24 * 70; // 70 days 
+
 /*
  * ====================
  *  Mod permissions
