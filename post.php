@@ -117,7 +117,7 @@ if (isset($_POST['delete'])) {
 		}
 	}
 	
-	if (checkDNSBL()) error("Tor users may not report posts.");
+	//if (checkDNSBL()) error("Tor users may not report posts.");
 		
 	// Check if board exists
 	if (!openBoard($_POST['board']))
