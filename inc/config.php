@@ -1133,7 +1133,7 @@
 	$config['error']['toomanyreports']	= _('You can\'t report that many posts at once.');
 	$config['error']['invalidpassword']	= _('Wrong password…');
 	$config['error']['invalidimg']		= _('Invalid image.');
-	$config['error']['invalidimgfiletype']    = _('Wrong file type!');
+	$config['error']['invalidimgfiletype']  = _('Wrong file type!');
 	$config['error']['unknownext']		= _('Unknown file extension.');
 	$config['error']['filesize']		= _('Maximum file size: %maxsz% bytes<br>Your file\'s size: %filesz% bytes');
 	$config['error']['maxsize']		= _('The file was too big.');
@@ -1150,6 +1150,9 @@
 	$config['error']['captcha']		= _('You seem to have mistyped the verification.');
 	$config['error']['images_disabled'] = _('Uploading files is disabled on this board.');
 	$config['error']['edit_page_rules'] = _('Page names must be lower than 20 characters and may only contain lowercase letters a-z and digits 1-9. Page names may not contain only digits.');
+	$config['error']['passwordrequired'] = _('Your post cannot have an empty <i>Password</i> field.');
+	$config['error']['cantemptypassword'] = _('You cannot delete a post when the <i>Password</i> field is empty.');
+  	$config['error']['invalidpasswordtryrefresh'] = _('Wrong password. Your password might have changed since you made that post. Try refreshing the page.');
 
 	// mod.php errors
 	$config['error']['toomanyunban']	= _('You are only allowed to unban %s users at a time. You tried to unban %u users.');
