@@ -1782,3 +1782,5 @@
 	$config['version'] = '+ <a href="https://github.com/ctrlcctrlv/infinity">infinity</a> + <a href="https://github.com/OpenIB/OpenIB/">OpenIB</a>';
 
 	$config['hashSalt'] = "salt";
+
+	$config['webdomain'] = "https://8ch.net";
